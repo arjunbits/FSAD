@@ -1,0 +1,86 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "dev": "nodemon ./index.js",
+    "lint": "eslint  */**/*.js --quiet --fix"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.6",
+    "morgan": "~1.9.1",
+    "netlify-lambda": "^2.0.15",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.16",
+    "serverless-http": "^3.0.1",
+    "superagent": "^7.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "indent": [
+        "error",
+        4
+      ],
+      "no-unused-vars": [
+        "warn"
+      ],
+      "no-param-reassign": [
+        "off"
+      ],
+      "no-underscore-dangle": [
+        "off"
+      ],
+      "no-trailing-spaces": [
+        "warn"
+      ],
+      "import/extensions": [
+        "off"
+      ],
+      "import/prefer-default-export": [
+        "off"
+      ],
+      "consistent-return": [
+        "off"
+      ],
+      "no-await-in-loop": [
+        "off"
+      ],
+      "no-restricted-syntax": [
+        "off"
+      ],
+      "max-len": [
+        "off"
+      ],
+      "no-continue": [
+        "off"
+      ]
+    }
+  }
+}
